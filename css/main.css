@@ -1,0 +1,160 @@
+/* Main Colors */
+:root {
+    --main-color: #1E1E1E;
+    --secondery-color: #111827;
+    --text-color: #EAB308;
+}
+/* Start Nav */
+.navbar {
+    background-color: var(--main-color);
+}
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+.navbar-brand:hover {
+    color: white;
+}
+.navbar-brand span {
+    color: var(--text-color);
+}
+.navbar .nav-link {
+    color: #979797;
+}
+.navbar .nav-link.active {
+    color: white !important;
+}
+.navbar .nav-link:hover {
+    color: white;
+}
+.burgermenu {
+    color: white;
+}
+/* End Nav */
+/* Start Home */
+.home {
+    background-color: var(--secondery-color);
+}
+.home p:first-child {
+    color: var(--text-color);
+}
+.home a {
+    color: black;
+    background-color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.home a:hover {
+    background-color: #ffc100;
+}
+/* End Home */
+/* Start About */
+.about {
+    background-color: var(--main-color);
+}
+.imgeabout {
+    position: relative;
+}
+.imgeabout::before {
+    position: absolute;
+    content: "";
+    border: 15px solid var(--text-color);
+    width: 92%;
+    height: 105%;
+    border-radius: 32px;
+    z-index: 1;
+    left: -20px;
+    top: 7px;
+}
+.imgab {
+    z-index: 1;
+}
+.about p:first-child {
+    color: white;
+}
+.about p:first-child  span{
+    color: var(--text-color);
+}
+.about a {
+    color: black;
+    background-color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.about a:hover {
+    background-color: #ffc100;
+}
+/* End About */
+/* Start Service */
+.service {
+    background-color: var(--secondery-color);
+}
+.service p:first-child span {
+    color: var(--text-color);
+}
+.service .card {
+    background-color: var(--main-color);
+}
+.service .card i {
+    color: var(--text-color);
+}
+/* End Service */
+/* Start Portofolio */
+.porofolio {
+    background-color: var(--main-color);
+}
+.porofolio p:first-child {
+    color: white;
+}
+.porofolio p:first-child  span{
+    color: var(--text-color);
+}
+.linkproject a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    background-color: var(--text-color);
+    transition: 0.5s;
+    display: none;
+}
+img {
+    transition: 0.3s;
+}
+.porofolio .imggg:hover img{
+    filter: brightness(0.5);
+}
+.porofolio .imggg:hover .linkproject a {
+   display: block;
+}
+.imggg {
+    position: relative;
+}
+/* End Portofolio */
+/* Start Contact */
+.contact {
+    background-color: var(--secondery-color);
+}
+.contact p:first-child {
+    color: white;
+}
+.contact p:first-child  span{
+    color: var(--text-color);
+}
+.contact p:not(:first-child) {
+    color: var(--text-color);
+}
+.contact p:not(:first-child) span{
+    color: white;
+}
+.social i {
+    padding-left: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.social a:hover i {
+    color: var(--text-color);
+}
+/* End Contact */
